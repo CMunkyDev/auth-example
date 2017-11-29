@@ -11,7 +11,8 @@ function addUser(username, password){
   return new Promise(function(resolve,reject){
     const user = {
       username,
-      password
+      password,
+      id: users.length
     }
 
     users.push(user);
