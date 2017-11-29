@@ -3,6 +3,7 @@ const users = [];
 function findUser(username){
   return new Promise(function(resolve, reject){
     const user = users.filter(e => e.username === username);
+    resolve(user)
   })
 }
 
